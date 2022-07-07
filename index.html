@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center" >
+    <h1>Hãy nhập nội dung vào đây</h1>
+    <textarea  id="hienthi" rows="4" cols="50" onkeypress="xulyNhap(event)">
+
+   </textarea>
+</div>
+
+<script>
+    let count=0;
+    let mang=[];
+    let a='Bạn là thằng ngu'
+
+    function xulyNhap(event){
+        mang.push(a[count])
+
+        event.preventDefault();
+        document.getElementById("hienthi").value=mang.join("")
+        count++
+        if (count>a.length){
+            document.getElementById("hienthi").value="";
+            count=0;
+            mang=[];
+        }
+    }
+</script>
+
+</body>
+</html>

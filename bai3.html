@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="input">
+<button onclick="tinhGiaiThua()">Giai thua</button>
+<h1 id="ketqua">Ket qua</h1>
+<script>
+    function tinhGiaiThua() {
+        let a = +document.getElementById('input').value;
+        let result = 1
+        for (let i = 1; i <=a; i++) {
+            if (a>0){
+                result = result * i
+                document.getElementById('ketqua').innerHTML=result
+            }
+            else {
+                document.getElementById('ketqua').innerHTML='Nhập sô'
+            }
+        }
+
+
+    }
+
+
+
+
+    // let n =+prompt('Nhap so');
+    //
+    // function tinhGiaiThua(s) {
+    //     let a=1;
+    //     for (let i =1;i<=s;i++) {
+    //         console.log('gia tri iiiii',i)
+    //         a=a*i;
+    //         console.log(s)
+    //     }return a
+    //
+    // }document.write(`${n} giai thua co gia tri la: ${tinhGiaiThua(n)}`)
+</script>
+
+</body>
+</html>
