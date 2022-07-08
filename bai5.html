@@ -5,6 +5,24 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    function soNguyen() {
+        let a=+prompt('Nhập số thứ nhất');
+        let b=+prompt('Nhập số thứ hai');
+        let c=+prompt('Nhập số thứ 3');
+        let d=[];
+        d.push(a,b,c);
+        let min=d[0];
+        console.log(d)
+        for (let i = 0; i < d.length; i++) {
+            if (min>d[i]){
+                min=d[i];
+            }
+
+        } alert('Số bé nhất là:' + ' ' + min)
+
+    }soNguyen()
+</script>
 
 </body>
 </html>
