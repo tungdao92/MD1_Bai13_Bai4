@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function doiChoMang() {
+        let b=[1,2,3,4,5,6,7,8];
+        alert('dãy số ban đầu là' +b)
+        console.log(b)
+        let first =0;
+        let last=b.length-1;
+        while (first<last){
+            let c=b[first];
+            b[first]=b[last];
+            b[last]=c;
+            first++;
+            last--;
+            console.log(b)
+        } alert('Sau khi đảo ngược dãy số'+b)
+    }doiChoMang()
+
+
+</script>
+
+</body>
+</html>
