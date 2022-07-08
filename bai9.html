@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra() {
+        let a=+prompt('Nhập 1 số');
+        let b=[1,2,3,4,5,5,6,1,7,3,8,9,0,11,12,32,12,43,6,7,45,6,76,876,85,746,35,3,546,57,56,768,798,879,678,5,74,6,45,35,35,345,45,];
+        let count=0;
+        for (let i = 0; i < b.length; i++) {
+            if (b[i]===a){
+                count++
+            }
+        } document.write('Số lần xuất hiện của'+''+a+''+ ' là:' +''+ count + '' + 'lần')
+    }
+    kiemTra()
+
+</script>
+
+</body>
+</html>
